@@ -2,21 +2,26 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 
+% Kokouksen nimi
+\title{Hallituksen kokous 2/2017}
+
+% Kokouksen toimihenkilöt
 \newcommand{\puheenjohtaja}{Marko Suovula}
 \newcommand{\sihteeri}{Vesa-Pekka Palmu}
 \newcommand{\pktarkastajaA}{Martti Paalanen}
-\newcommand{\pktarkastajaB}{Eero Af Heurlin}
-\date{10.1.2017}
-\newcommand{\alkuaika}{20.15}
-\newcommand{\loppuaika}{20.30}
+\newcommand{\pktarkastajaB}{Eero af Heurlin}
+\date{10.1.2017} % Kokouksen päivämäärä
+\newcommand{\alkuaika}{20.15} 	% Aloitusaika
+\newcommand{\loppuaika}{20.30} 	% Lopetusaika
 
-
+% Makro allekirjoituksia varten
 \newcommand{\namesig}[2][5cm]{%
   \begin{tabular}{@{}p{#1}@{}}
     \\[2\normalbaselineskip] \hrule \medskip #2 \\[0pt]
   \end{tabular}
 }
 
+% Makro pöytäkirjan numeroituja pykäliä varten
 \newcounter{pkPykala}
 \setcounter{pkPykala}{1}
 \newcommand{\pkP}[1]{
@@ -24,16 +29,15 @@
 	 \addtocounter{pkPykala}{1}
 }
 
+% Yhdistyksen nimi ja osoite
 \author{Helsinki Hacklab Ry}
 \address{
   Takkatie 18\\
   00370 Helsinki
 }
 
-
+% Asiakirjatyyppi
 \type{Pöytäkirja}
-
-\title{Hallituksen kokous 2/2017}
 
 \begin{document}
 
@@ -41,7 +45,7 @@
 
 \section{Läsnä}
 
-\noindent Eero af Heurlin, Teppo Jussmäki, Taneli Kaivola, Martti Paalanen, Vesa-Pekka Palmu ja Marko Suovula, 
+\noindent Eero agf Heurlin, Teppo Jussmäki, Taneli Kaivola, Martti Paalanen, Vesa-Pekka Palmu ja Marko Suovula, 
 
 \pkP{Kokouksen avaus}
 
