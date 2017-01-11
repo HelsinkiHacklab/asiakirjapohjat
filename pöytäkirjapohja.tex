@@ -1,0 +1,86 @@
+\documentclass{vakioasiakirja}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\newcommand{\puheenjohtaja}{Marko Suovula}
+\newcommand{\sihteeri}{Vesa-Pekka Palmu}
+\newcommand{\pktarkastajaA}{Martti Paalanen}
+\newcommand{\pktarkastajaB}{Eero Af Heurlin}
+\date{10.1.2017}
+\newcommand{\alkuaika}{20.15}
+\newcommand{\loppuaika}{20.30}
+
+
+\newcommand{\namesig}[2][5cm]{%
+  \begin{tabular}{@{}p{#1}@{}}
+    \\[2\normalbaselineskip] \hrule \medskip #2 \\[0pt]
+  \end{tabular}
+}
+
+\newcounter{pkPykala}
+\setcounter{pkPykala}{1}
+\newcommand{\pkP}[1]{
+	\section{\arabic{pkPykala} #1}
+	 \addtocounter{pkPykala}{1}
+}
+
+\author{Helsinki Hacklab Ry}
+\address{
+  Takkatie 18\\
+  00370 Helsinki
+}
+
+
+\type{Pöytäkirja}
+
+\title{Hallituksen kokous 2/2017}
+
+\begin{document}
+
+\maketitle
+
+\section{Läsnä}
+
+\noindent Eero Af Heurlin, Teppo Jussmäki, Taneli Kaivola, Martti Paalanen, Vesa-Pekka Palmu ja Marko Suovula, 
+
+\pkP{Kokouksen avaus}
+
+\noindent \puheenjohtaja avasi kokouksen kello \alkuaika
+
+\pkP{Kokouksen järjestäytyminen}
+
+\noindent Valittiin kokouksen puheenjohtajaksi \puheenjohtaja ja sihteeriksi \sihteeri. Pöytäkirjantarkastajiksi valittiin \pktarkastajaA ja \pktarkastajaB.
+
+\pkP{Kokouksen päätösvaltaisuus}
+
+\noindent Kokous on päätösvaltainen, koska paikalla on vähintään puolet hallituksen jäsenistä.
+
+\pkP{Kokouksen työjärjestys}
+
+\noindent Hyväksyttiin esityslista kokouksen työjärjestykseksi
+
+\pkP{Jäsenasiat}
+
+\noindent Hyväksyttiin uudet jäsenet ja avainjäsenet liitteen 1 mukaisesti.
+
+\pkP{Kokouksen päättäminen}
+
+\noindent \puheenjohtaja päätti kokouksen kello \loppuaika.\\A\\B\\C\\D\\E\\F
+
+\vfill
+
+\section{Liitteet} 
+
+\align Liite 1. Hyväksytyt jäsenet
+
+\section{Pöytäkirjan vakuudeksi}
+\nopagebreak
+
+\noindent
+\namesig{\puheenjohtaja \\puheenjohtaja} \hfill \namesig{\sihteeri \\sihteeri}
+\nopagebreak
+\linebreak
+\vspace{5cm}
+\namesig{\pktarkastajaA \\pöytäkirjantarkastaja} \hfill \namesig{\pktarkastajaB \\pöytäkirjantarkastaja}
+
+\end{document}
